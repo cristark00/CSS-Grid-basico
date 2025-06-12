@@ -3,16 +3,31 @@
     background-color: #fff1ff;
     display: grid;
     /*decirle a la grilla cuantas columnas tendra y de que ancho*/
-    grid-template-rows: 100px 100px 100px;
-    grid-auto-columns: 100px;
+    grid-template-columns: 100px 100px;
+    grid-auto-rows: 100px;
     /*gridAutoFlow: modificar como se llena la grilla*/
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     /*gap: define el tamaño de la brecha o espacio ue se quiere tener*/
     gap: 20px;
+    height: 600px;
+    /* PROPIEDADES DE ALINEACION DEL CONTENEDORE --->
+    Justify: alineacion horizontal
+    align: alineacion vertical
+    place-content:  mezcla de las dos directivas
+
+
+    PROPIEDADES DE ALINEACION DEL ITEM ---->
+    justify-self, align-self, place-self
+
+    */
+    place-content: center;
 }
 
 .item{
     border: 5px solid #00bcd4;
     font-size: 4rem;
 
+}
+.item-2, .item-1, .item-3, .item-4 {
+    place-self: end;
 }
