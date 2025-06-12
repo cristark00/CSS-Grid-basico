@@ -1,0 +1,18 @@
+.contenedor{
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    /*decirle a la grilla cuantas columnas tendra y de que ancho*/
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    /*gridAutoFlow: modificar como se llena la grilla*/
+    grid-auto-flow: column;
+    /*gap: define el tamaño de la brecha o espacio ue se quiere tener*/
+    gap: 20px;
+}
+
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+
+}
