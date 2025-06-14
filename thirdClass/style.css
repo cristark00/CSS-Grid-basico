@@ -1,0 +1,25 @@
+.contenedor{
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(30px, 250px);
+    grid-template-rows: repeat(3, auto);
+}
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 2rem;
+}
+/*
+Keywords especiales
+--> fr : es una unidad relativamente nueva de medida especial de CSS Grid para darle ancho o alto a filas y columnas. 1fr representa una fracción del total de columnas o filas.
+--> min-content : ajusta el ancho de la celda lo mínimo posible sin romper su contenido.
+--> max-content : ajusta el ancho de la celda lo máximo posible para mostrar su contenido.
+--> auto-fill : logra que la grilla ocupe el 100% del espacio que tiene. Agrega columnas “fantasma” que rellenan el espacio sobrante del contenedor.
+--> auto-fit : ensancha las columnas para que ocupen todo el espacio del contenedor.
+--> auto-fill y auto-fit: ayudan a la grilla a ocupar el 100% del espacio disponible.
+
+grid-template-columns: repeat (auto-fit, 1fr);
+grid-template-columns_ reapeat(auto-fill,1fr); creara unas columnadas imaginarias para que se 
+complemente en el conetenedor
+
+*/

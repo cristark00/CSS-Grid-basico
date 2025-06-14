@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+      gap: 10px;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .grid div {
+      background-color: #4da6ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ejemplo de <code>grid-template-columns</code></h2>
+
+  <div class="grid">
+    <div>Columna 1<br>(100px)</div>
+    <div>Columna 2<br>(1fr)</div>
+    <div>Columna 3<br>(2fr)</div>
+  </div>
+
+</body>
+</html>

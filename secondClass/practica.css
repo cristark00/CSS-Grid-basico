@@ -9,6 +9,8 @@
 }
 .item1{
     background-color: aqua;
+    display: grid;
+    place-content: center;
 }
 .item2{
     background-color:blueviolet;
