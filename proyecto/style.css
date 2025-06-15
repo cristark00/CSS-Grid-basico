@@ -37,6 +37,24 @@ main{
     font-weight: bolder;
     padding: 12px 24px;
 }
+.header-Top{
+    display: grid;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+
+}
+.toggle-theme-btn{
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    color: azure;
+    background-color: rgba(22, 21, 21, 0.889);
+    font-weight: bold;
+    padding: 12px 30px;
+    margin-top: 10;
+    margin-right: 20px;
+}
 .dishes{
     margin: 100px 0;
 }.dishes-title{
@@ -89,4 +107,36 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+/* Dark them styles*/
+.dark-theme #task-manager {
+  background: #222;
+  color: #fff;
+}
+.dark-theme .info-title{
+     color: #f5f0f0;
+}
+.dark-theme .dishes-title{
+  color: #f5f0f0;
+}
+
+.dark-theme .info-subtitle{
+  color: #f5f0f0;
+}
+@media screen and (max-width: 768px) {
+    .hero-image{
+        display: none;
+    }
+    .hero{
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+    .dishes-grid{
+    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+    }
 }

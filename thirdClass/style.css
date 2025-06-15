@@ -2,7 +2,7 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-columns: minmax(30px, 300px) 200px minmax(30px, 250px);
+    grid-template-columns: minmax(150px, 300px) 200px minmax(30px, 250px);
     grid-template-rows: repeat(3, auto);
 }
 .item{
